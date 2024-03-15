@@ -16,7 +16,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #811111;
+    background-color: #a70000;
 }
 header {
     width: 1320px;
@@ -55,8 +55,8 @@ header {
     transition: all 0.7s;
 }
 .h_contain nav > ul > li:hover {
-    background-color: #000000;
-    color: #fff;
+    background-color: #dddddd;
+    color: #333;
     border-radius: 30px;
     height: 50px;
     line-height: 50px;
@@ -71,20 +71,14 @@ header {
     height: 40px;
     border: none;
     border-radius: 20px;
-    color: #811111;
+    color: #333;
     background-color: #fff;
     transition: all 0.8s;
 }
 .sign button:nth-child(2) {
     margin-left: 30px;
 }
-.sign button:first-child:hover{
-    background-color: #333;
-    color: #fff;
-    cursor: pointer;
-    transition: all 0.6s;
-}
-.sign button:nth-child(2):hover {
+.sign button:hover{
     background-color: #333;
     color: #fff;
     cursor: pointer;
@@ -131,11 +125,14 @@ header {
         left: -7680px;
     }
 }
+.body_contain{
+    display: flex;
+    margin: 100px 0 0 50px;
+}
 .info_contain{
-    margin: 200px 0 0 50px;
     width: 450px;
     height: 500px;
-    background-color: #500000;
+    background-color: #7a0000;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -165,7 +162,7 @@ header {
     font-size: 28px;
 }
 .info ul {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .info li {
     list-style:circle;
@@ -175,11 +172,11 @@ header {
     height: 30px;
     position: absolute;
     left: 330px;
-    top: 460px;
+    top: 440px;
     border: 1px solid #fff;
     border-radius: 20px;
     transition: all 0.6s;
-    background-color: #500000;
+    background-color: #7a0000;
     color: #fff;
 }
 .info button:hover {
@@ -187,4 +184,44 @@ header {
     color: #333;
     transition: all 0.6s;
     cursor: pointer;
+}
+.c_contain{
+    width: 700px;
+    height: 400px;
+}
+.calender {
+    width: 651px;
+    height: 350px;
+    margin: 24.5px 25px 24.5px 25px;
+}
+.calender h2 {
+    text-align: center;
+}
+.days {
+    padding-left: 0;
+    display: flex;
+    padding-top: 20px;
+}
+.days li {
+    width: 93px;
+    text-align: center;
+}
+.weeks {
+    padding: 0;
+    display: flex;
+}
+.weeks li {
+    width: 93px;
+    height: 61.8px;
+    line-height: 61.8px;
+    text-align: center;
+}
+.last {
+    color: #ccc;
+}
+.sun{
+    color: red;
+}
+.satur {
+    color: blue;
 }
