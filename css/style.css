@@ -16,13 +16,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #811111;
 }
 header {
     width: 1320px;
     height: 75px;
     display: flex;
     align-items: center;
-    background-color: #811111;
     position: fixed;
     z-index: 1;
 }
@@ -52,10 +52,15 @@ header {
     line-height: 65px;
     font-size: 18px;
     color: #eee;
+    transition: all 0.7s;
 }
-.h_contain nav > ul > li > a:hover {
+.h_contain nav > ul > li:hover {
+    background-color: #000000;
     color: #fff;
-    text-decoration: underline;
+    border-radius: 30px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
 }
 .sign {
     width: 30%;
@@ -74,7 +79,7 @@ header {
     margin-left: 30px;
 }
 .sign button:first-child:hover{
-    background-color: #666;
+    background-color: #333;
     color: #fff;
     cursor: pointer;
     transition: all 0.6s;
@@ -130,7 +135,9 @@ header {
     margin: 200px 0 0 50px;
     width: 450px;
     height: 500px;
-    background-color: #790000;
+    background-color: #500000;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 .info {
     width: 400px;
@@ -154,6 +161,9 @@ header {
     height: 100px;
     color: #fff;
 }
+.info h2 {
+    font-size: 28px;
+}
 .info ul {
     margin-top: 30px;
 }
@@ -169,7 +179,7 @@ header {
     border: 1px solid #fff;
     border-radius: 20px;
     transition: all 0.6s;
-    background-color: #790000;
+    background-color: #500000;
     color: #fff;
 }
 .info button:hover {
