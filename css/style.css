@@ -132,7 +132,7 @@ header {
 .info_contain{
     width: 450px;
     height: 500px;
-    background-color: #7a0000;
+    background: linear-gradient( to bottom , #ff4d4d , #4e0000);
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
@@ -176,7 +176,7 @@ header {
     border: 1px solid #fff;
     border-radius: 20px;
     transition: all 0.6s;
-    background-color: #7a0000;
+    background-color: #4e0000;
     color: #fff;
 }
 .info button:hover {
@@ -188,6 +188,8 @@ header {
 .c_contain{
     width: 700px;
     height: 400px;
+    margin-left: 100px;
+    display: flex;
 }
 .calender {
     width: 651px;
@@ -212,9 +214,14 @@ header {
 }
 .weeks li {
     width: 93px;
-    height: 61.8px;
+    height: 60.2px;
     line-height: 61.8px;
     text-align: center;
+}
+.wd:hover {
+    border-radius: 10px;
+    background-color: #eee;
+    transition: all 0.7s;
 }
 .last {
     color: #ccc;
@@ -222,6 +229,95 @@ header {
 .sun{
     color: red;
 }
+.sun:hover{
+    border-radius: 10px;
+    background-color: #eee;
+    transition: all 0.7s;
+}
 .satur {
     color: blue;
+}
+.satur:hover{
+    border-radius: 10px;
+    background-color: #eee;
+    transition: all 0.7s;
+}
+input[type=checkbox]{
+    display: none;
+}
+.modal_box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 500px;
+    height: 300px;
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+.modal_li{
+    cursor: pointer;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.modal_contain {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 100%;
+    height: 300vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 100;
+}
+#modal:checked~.modal_contain {
+    display: block;
+}
+.game_live {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #333;
+    display: flex;
+    position: relative;
+}
+.game_live:hover {
+    border: 15px solid pink;
+}
+.web_team {
+    background-color: rgb(255, 53, 53);
+}
+.web_team p{
+    width: 150px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+.design_team {
+    background-color: rgb(49, 49, 255);
+}
+.design_team p{ 
+    width: 150px;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+}
+.game_live h3 {
+    text-align: center;
+    align-items: center;
+}
+.game_live button {
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 250px;
+    border: none;
+    background-color: pink;
+    font-size: 22px;
+    color: #fff;
 }
