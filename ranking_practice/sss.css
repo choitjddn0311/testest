@@ -1,0 +1,83 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.contain {
+    width: 600px;
+    height: 498px;
+    background-color: #aaa;
+    display: flex;
+}
+.tabs {
+    width: 200px;
+    height: 498px;
+}
+.tab {
+    display: block;
+    width: 200px;
+    height: 166px;
+    background-color: #ccc;
+    text-align: center;
+    font-size: 23px;
+    line-height: 165px;
+}
+.tab:nth-child(2) {
+    background-color: #eee;
+}
+.tab:hover {
+    background-color: skyblue;
+}
+.select {
+    display: flex;
+}
+.select a {
+    display: block;
+    width: 200px;
+    height: 48px;
+    background-color: pink;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+}
+.select a:first-child {
+    background-color: yellow;
+}
+.select1 {
+    display: flex;
+}
+.select1 a {
+    display: block;
+    width: 200px;
+    height: 48px;
+    background-color: pink;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+}
+.select1 a:first-child {
+    background-color: yellow;
+}
+#pitcher {
+    width: 400px;
+    height: 450px;
+    background-color: black;
+    display: none;
+}
+#hitter {
+    width: 400px;
+    height: 450px;
+    background-color: teal;
+    display: none;
+}
+#content1 {
+    display: none;
+}
+#content1:target {
+    display: block;
+}
+#content2:target {
+    display: block;
+}
+#pitcher:target {
+    display: block;
+}
