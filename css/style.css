@@ -325,6 +325,7 @@ input[type=checkbox]{
     width: 900px;
     height: 600px;
     background-color: #aaa;
+    margin-top: 500px;
 }
 .tab_menu {
     width: 900px;
@@ -352,9 +353,6 @@ input[type=checkbox]{
     height: 500px;
     background-color: red;
     display: none;
-}
-.tab_content:target {
-    display: block;
 }
 .select {
     width: 300px;
